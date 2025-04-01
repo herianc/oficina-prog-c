@@ -13,6 +13,8 @@ Este repositório contém as resoluções dos exercícios propostos na disciplin
 ## Conteúdo das aulas 
 
 
-| Aula   | Conteúdo                                                                                     |
-| ------ | -------------------------------------------------------------------------------------------- |
-| Aula 1 | Variáveis e expressões na lingagem C (variáveis, operações matemáticas, printf) + Compilação |
+| Aula | Conteúdo                                                                                     |
+| ---- | -------------------------------------------------------------------------------------------- |
+| 1    | Variáveis e expressões na lingagem C (variáveis, operações matemáticas, printf) + Compilação |
+| 2    | Funções, scanf e tipos de dados (float e char)                                               |
+

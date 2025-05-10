@@ -24,14 +24,30 @@ Nota 9: 1 aluno(s)
 Nota 10: 1 aluno(s)
 */
 
-#define TAM 15
-
 int main() {
-    int notas[TAM];
-
-    for (int i=0; i<TAM; i++) {
+    int notas[15];  
+    int frequencia[11] = {0};  // Vetor para contar a frequência de cada nota (0 a 10)
+    int i;
+    
+    // Leitura das notas
+    printf("Digite as 15 notas: ");
+    for (i = 0; i < 15; i++) {
         scanf("%d", &notas[i]);
+        
+        // Verifica se a nota está no intervalo válido (0 a 10)
+        if (notas[i] >= 0 && notas[i] <= 10) {
+            frequencia[notas[i]]++;  // Incrementa a contagem da nota correspondente
+        } else {
+            printf("Nota inválida! Digite um número entre 0 e 10.\n");
+            i--;  // Permite que o usuário digite a nota novamente
+        }
     }
-
+    
+    // Exibição da frequência de cada nota
+    printf("\nFrequência das notas:\n");
+    for (i = 0; i <= 10; i++) {
+        printf("Nota %d: %d aluno(s)\n", i, frequencia[i]);
+    }
+    
     return 0;
 }

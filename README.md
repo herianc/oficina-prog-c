@@ -19,5 +19,7 @@ Este repositório contém as resoluções dos exercícios propostos na disciplin
 | 2    | Funções, entrada de dados e tipos de dados (float e char)                                     |
 | 3    | Tipos de dados Booleanos, expressões e operadores lógicos, controle de fluxo                  |
 | 4    | Comandos de repetições na linguagem C                                                         |
+| 5    | Vetores; Cadeias de caracteres na linguagem C, gets, puts                                     |
+
 
 

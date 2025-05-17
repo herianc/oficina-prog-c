@@ -1,29 +1,24 @@
 #include <stdio.h>
+#include <string.h>
 
-int maior_valor(int vetor[], int tamanho) {
-    int maior = vetor[0];
-    for (int i = 1; i < tamanho; i++) {
-        if (vetor[i] > maior) {
-            maior = vetor[i];
+int conta_letras(char frase[]) {
+    int cont = 0;
+    for (int i = 0; i < strlen(frase); i++) {
+        if (frase[i] >= 'a' && frase[i] <= 'z') {
+            cont++;    
         }
+        
     }
-    return maior;
+    return cont;
 }
 
 int main() {
-    int temperaturas[10];
-
-    printf("Digite as 10 temperaturas:\n");
-    for (int i = 0; i < 10; i++) {
-        scanf("%d", &temperaturas[i]);
-    }
-
-    int maior = maior_valor(temperaturas, 10);
-    printf("Maior temperatura registrada: %d\n", maior);
-
+    char texto[100];
+    fgets(texto, 100, stdin);
+    printf("%d\n", conta_letras(texto));
     return 0;
 }
 
 
 // Entrada: C é legal
-// Saída: 6
+// Saída: 5 (O compilador considera "e" e "é" diferentes e por isso não é contabilizado no algoritmo)

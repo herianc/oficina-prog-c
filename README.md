@@ -20,6 +20,8 @@ Este repositório contém as resoluções dos exercícios propostos na disciplin
 | 4    | Comandos de repetições na linguagem C                                                         |
 | 5    | Vetores; Cadeias de caracteres na linguagem C, gets, puts                                     |
 | 6    | Matrizes na linguagem C                                                                       |
+| 7    | Recursão                                                                                      |
+
 
 
 

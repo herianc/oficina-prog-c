@@ -15,16 +15,16 @@ typedef struct {
 } ALUNO;
 
 ALUNO lerAluno() {
-    ALUNO aluno_criado;
+    ALUNO aluno_novo;
 
     printf("Digite o nome do aluno: ");
-    scanf("%s", aluno_criado.nome);
+    scanf("%s", aluno_novo.nome);
     printf("Digite a idade do aluno: ");
-    scanf("%d", &aluno_criado.idade);
+    scanf("%d", &aluno_novo.idade);
     printf("Digite a nota do aluno: ");
-    scanf("%f", &aluno_criado.nota);
+    scanf("%f", &aluno_novo.nota);
 
-    return aluno_criado;
+    return aluno_novo;
 } 
 
 void imprimeAluno(ALUNO aluno) {

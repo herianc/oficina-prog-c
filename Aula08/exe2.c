@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*
-Cálculo da média de duas notas
+Exercício 2 - Cálculo da média de duas notas
 Crie uma estrutura chamada ALUNO com os campos: nome (até 50 caracteres) e duas
 notas (float).
 Faça um programa que leia os dados de um aluno, calcule a média das duas notas
@@ -17,16 +17,16 @@ typedef struct {
 } ALUNO;
 
 ALUNO lerAluno() {
-    ALUNO aluno_criado;
+    ALUNO aluno_novo;
 
     printf("Digite o nome do aluno: ");
-    scanf("%s", aluno_criado.nome);
+    scanf("%s", aluno_novo.nome);
     printf("Digite a nota 1 do aluno: ");
-    scanf("%f", &aluno_criado.nota1);
+    scanf("%f", &aluno_novo.nota1);
     printf("Digite a nota 2 do aluno: ");
-    scanf("%f", &aluno_criado.nota2);
+    scanf("%f", &aluno_novo.nota2);
 
-    return aluno_criado;
+    return aluno_novo;
 } 
 
 void imprimeAluno(ALUNO aluno) {

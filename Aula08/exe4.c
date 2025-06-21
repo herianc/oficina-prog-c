@@ -17,16 +17,16 @@ typedef struct {
 } PRODUTO;
 
 PRODUTO lerProduto(){
-    PRODUTO produto_criado;
+    PRODUTO produto_novo;
 
     printf("Nome do produto: ");
-    fgets(produto_criado.nome, 50, stdin);
+    fgets(produto_novo.nome, 50, stdin);
     printf("Preço do produto: ");
-    scanf("%f", &produto_criado.preco);
-    getchar(); //
-    printf("\n");
+    scanf("%f", &produto_novo.preco);
 
-    return produto_criado;
+    getchar();
+
+    return produto_novo;
 }
 
 float somaPrecos(PRODUTO produtos[], int tamanho) {
